@@ -3,105 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Executor iOS | Sitio Oficial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>Delta Executor - iOS Edition</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #00e676;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #aaaaaa;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+        .descripcion {
+            color: #dddddd;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        /* Estado y Características */
+        .status-box {
+            background: rgba(0, 230, 118, 0.1);
+            border: 1px solid #00e676;
+            color: #00e676;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .features {
+            text-align: left;
+            max-width: 350px;
+            margin: 0 auto 35px auto;
+            padding: 0;
+            list-style: none;
+        }
+        .features li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+        }
+        .features li::before {
+            content: "⚡";
+            margin-right: 10px;
+        }
+
+        /* Botones de Acción */
+        .btn {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 16px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, background 0.2s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn-ipa {
+            background-color: #007aff; /* Azul estilo iOS */
+        }
+        .btn-ipa:hover {
+            background-color: #0056b3;
+        }
+        .btn-direct {
+            background-color: #34c759; /* Verde */
+        }
+        .btn-direct:hover {
+            background-color: #248a3d;
+        }
+        .btn-yt {
+            background-color: #ff0000; /* Rojo YouTube */
+            margin-top: 25px;
+        }
+        .btn-yt:hover {
+            background-color: #cc0000;
+        }
+
+        .ayuda-texto {
+            margin-top: 35px;
+            color: #aaaaaa;
+            font-size: 0.95rem;
+        }
+        footer {
+            margin-top: 50px;
+            color: #666666;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Fondos de luces y rejilla gamer generados por CSS -->
-    <div class="grid-bg"></div>
-    <div class="glow-sphere-1"></div>
-    <div class="glow-sphere-2"></div>
-
-    <div class="wrapper">
-        <main class="main-card">
-            
-            <!-- LOGO OFICIAL DELTA GENERADO POR CÓDIGO (No necesitas subir fotos) -->
-            <div class="logo-container">
-                <div class="logo-glow"></div>
-                <svg class="delta-logo-svg" viewBox="0 0 100 100" xmlns="http://w3.org">
-                    <polygon points="50,15 15,85 85,85" class="delta-triangle-outer"/>
-                    <polygon points="50,32 30,75 70,75" class="delta-triangle-inner"/>
-                    <path d="M35,75 L50,45 L65,75" class="delta-core" stroke="#00ff88" stroke-width="4" fill="none"/>
-                </svg>
-            </div>
-
-            <!-- TÍTULO IMPACTANTE -->
-            <div class="brand-header">
-                <h1>DELTA <span class="text-neon">EXECUTOR</span></h1>
-                <div class="platform-tag"><i class="fa-brands fa-apple"></i> iOS EDITION</div>
-            </div>
-
-            <p class="description">La herramienta definitiva para ejecutar tus scripts favoritos en Roblox móvil. Interfaz optimizada, máximo rendimiento y sin caídas.</p>
-
-            <!-- ESTADO DEL EXPLOIT EN TIEMPO REAL -->
-            <div class="status-box">
-                <div class="status-online">
-                    <span class="ping-wave"></span>
-                    <span class="ping-dot"></span>
-                    <p>ESTADO: <span class="status-text">OPERATIVO Y ACTUALIZADO</span></p>
-                </div>
-            </div>
-
-            <!-- CARACTERÍSTICAS PREMIUM -->
-            <div class="features-grid">
-                <div class="card-item">
-                    <i class="fa-solid fa-bolt text-neon"></i>
-                    <h3>Keyless / Fast</h3>
-                    <p>Inyección en milisegundos</p>
-                </div>
-                <div class="card-item">
-                    <i class="fa-solid fa-shield-virus text-neon"></i>
-                    <h3>Safe Code</h3>
-                    <p>Sin riesgo de baneo</p>
-                </div>
-            </div>
-
-            <!-- BOTONES DE DESCARGA DIRECTA -->
-            <div class="download-section">
-                <!-- Pon tu enlace sustituyendo el '#' si alguna vez quieres, si no, déjalo así -->
-                <a href="#" class="download-btn primary-btn">
-                    <div class="btn-content">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                        <div>
-                            <span class="btn-title">DESCARGAR .IPA</span>
-                            <span class="btn-subtitle">Para AltStore / Scarlet / Esign</span>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </a>
-
-                <a href="#" class="download-btn secondary-btn">
-                    <div class="btn-content">
-                        <i class="fa-solid fa-bolt-lightning"></i>
-                        <div>
-                            <span class="btn-title">INSTALACIÓN DIRECTA</span>
-                            <span class="btn-subtitle">Instalar vía Web (Sin PC)</span>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </a>
-            </div>
-
-            <!-- SECCIÓN YOUTUBE INTEGRADA -->
-            <div class="youtube-banner">
-                <div class="yt-info">
-                    <i class="fa-brands fa-youtube yt-logo"></i>
-                    <div>
-                        <h4>¿No sabes cómo instalarlo?</h4>
-                        <p>Mira el tutorial paso a paso en el canal</p>
-                    </div>
-                </div>
-                <a href="#" class="yt-subscribe-btn" target="_blank">VER TUTORIAL</a>
-            </div>
-
-        </main>
+    <div class="container">
+        <h1>DELTA EXECUTOR</h1>
+        <div class="subtitle">iOS EDITION</div>
         
-        <footer class="minimal-footer">
-            <p>© 2026 Delta iOS Fan Web • Creado para la comunidad de YouTube</p>
-        </footer>
+        <p class="descripcion">La herramienta definitiva para ejecutar tus scripts favoritos en Roblox móvil. Interfaz optimizada, máximo rendimiento y sin caídas.</p>
+        
+        <div class="status-box">ESTADO: OPERATIVO Y ACTUALIZADO</div>
+        
+        <ul class="features">
+            <li>Keyless / Fast</li>
+            <li>Inyección en milisegundos</li>
+            <li>Safe Code</li>
+            <li>Sin riesgo de baneo</li>
+        </ul>
+
+        <!-- BOTÓN ENLACE MEDIAFIRE -->
+        <a href="https://mediafire.com" class="btn btn-ipa" target="_blank">
+            DESCARGAR .IPA Para AltStore / Scarlet / Esign
+        </a>
+
+        <!-- BOTÓN INSTALACIÓN DIRECTA (Por ahora recarga la página, cámbialo cuando tengas el manifest público) -->
+        <a href="#" class="btn btn-direct">
+            INSTALACIÓN DIRECTA Instalar vía Web (Sin PC)
+        </a>
+
+        <div class="ayuda-texto">¿No sabes cómo instalarlo?</div>
+        
+        <!-- BOTÓN ENLACE YOUTUBE -->
+        <a href="https://youtube.com/@codigozeroglitch?si=SbAWwPPZWWJiQ453" class="btn btn-yt" target="_blank">
+            MIRA EL TUTORIAL EN EL CANAL
+        </a>
     </div>
+
+    <footer>
+        © 2026 Delta iOS Fan Web • Creado para la comunidad de Código Zero
+    </footer>
 
 </body>
 </html>
